@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Langston's Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    
+      body {
+        background-color: #d9dcd6;
+      }
+    
+      .current-page {
+        font-weight: bold;
+      }
+    
+      nav {
+        font-size: 16px;
+      }
+    
+      #self-desc {
+        background-color: #B5B6B0;
+        box-shadow: 0 0 0 1px #000000;
+        border-radius: 10px;
+        padding: 5px;
+        max-width: 700px;
+      }
+    
+      #image-container {
+        flex: 0 0 auto; 
+        max-width: 18%;
+        padding: 20px;
+        order: 1;
+      }
+    
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+    
+      body {
+        margin-bottom: 60px;
+      }
+    
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 59px;
+      }
+    </style>    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar" style="background-color: #3a7ca5 !important;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../views/home.html" style="font-size: 20px; font-weight: bold;"> Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="../views/hobbies.html" style="font-size: 20px;">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/projects.html" style="font-size: 20px;">Projects</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <img src="../resources/img/bingus.jpg" width= "50px" alt="man with a monocle">
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div style="display: flex;">
+      <div style = "padding: 20px;">
+        <self-image id="self-image"><img src="../resources/img/selfimage.jpg" width="300px" alt="Self Image" style="border-radius: 10px;"></self-image>
+      </div>
+      <div style="flex: .7; padding: 20px; flex-shrink: 1;">
+        <div id="self-desc">
+          <h2>About Langston</h2>
+          <p>   Welcome to my personal website! I am Langston Denning, a highly motivated and results-driven individual with a strong foundation in 
+            Computer Science. I am persuing a batchelors of science in Computer Science from The University of Colorado Boulder.
+             With one year of hands-on experience in Data Analysis and Software Development, I have successfully 
+             updated over one-hundread outdated reports from web-based data queries to direct SQL queries and had first-hand experience
+              working with back-end software development at ThinkWare.
+              As an enthusiastic and adaptable person, I thrive in dynamic work environments
+              and excel in collaborating with teams. Explore my portfolio to gain insights into my passion for Computer Science!
+          </p>
+          <a href="../views/resume.html">My Resume! </a>
+        </div>
+      </div>
+      <span id="image-container">
+        <img src="../resources/img/filler.gif" width="500px" style="border-radius: 10px;">
+      </span>
+    </div>
+  </body>
+  <footer>
+    <nav class="navbar bg-body-tertiary" style="background-color: #3a7ca5 !important;">
+      <div class="container" id="footer" style="display: flex; justify-content: center; align-items: center;">
+        <a class="navbar-brand" href="https://www.snapchat.com/add/langst_d?share_id=FhwM0bTTQC-4zSBScme4Ww&locale=en_US">
+          <img src="../resources/img/snap.png" alt="Snapchat" width="30">
+        </a>
+        <a class="navbar-brand" href="https://www.instagram.com/langston_denning?igsh=NXFtMHRneTJob3Jt&utm_source=qr">
+          <img src="../resources/img/insta.png" alt="Instagram" width="30">
+        </a>
+        <a class="navbar-brand" href="https://open.spotify.com/user/v5h1l0d5x6gs6fes747kp29fx?si=n9M3Tr67RyWWFvgRqe6y6Q">
+          <img src="../resources/img/spotify.png" alt="Spotify" width="30">
+        </a>
+      </div>
+    </nav>
+  </footer>
+  
+</html>
